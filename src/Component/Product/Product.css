@@ -1,0 +1,33 @@
+.productCard {
+    border: 1px solid #95A0A7;
+    position: relative;
+    border-radius: 8px;
+    height: 550px;
+
+}
+
+.productDetails img {
+    width: 300px;
+}
+
+.productDetails {
+    padding: 7px;
+}
+
+.productDetails h3,
+.productDetails h4 {
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.productCard button {
+    position: absolute;
+    bottom: 0;
+    background: #FFE0B3;
+    border: 1px solid #95A0A7;
+    border-radius: 0px 0px 8px 8px;
+    /* width: 100%; */
+    width: 314px;
+    height: 48px;
+
+}
