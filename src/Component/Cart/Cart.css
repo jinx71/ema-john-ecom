@@ -1,4 +1,10 @@
 .cart {
     background-color: aqua;
-    /* position: sticky; */
+}
+
+@media (max-width : 992px) {
+    .cart {
+        grid-column: 1;
+        grid-row: 1;
+    }
 }
