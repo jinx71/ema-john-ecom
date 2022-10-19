@@ -2,15 +2,28 @@ nav {
     background-color: #1C2B35;
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding-right: 150px;
+    /* padding: 20px; */
 }
 
 nav img {
     padding-left: 150px;
+    padding-top: 5px;
 }
 
-nav ul li {
+nav a {
     display: inline;
     color: white;
     padding: 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

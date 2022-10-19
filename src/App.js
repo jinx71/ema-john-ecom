@@ -1,13 +1,10 @@
-import './App.css';
-import Nav from './Component/Nav/Nav';
-import Shop from './Component/Shop/Shop';
+import { RouterProvider } from 'react-router-dom';
+import { router } from './Routes/Routes';
 
 function App() {
+
   return (
-    <div className="">
-      <Nav></Nav>
-      <Shop></Shop>
-    </div>
+    <RouterProvider router={router}></RouterProvider>
   );
 }
 
