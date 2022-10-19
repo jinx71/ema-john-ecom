@@ -1,5 +1,7 @@
 .cart {
-    background-color: aqua;
+    /* background-color: aqua; */
+    position: sticky;
+    top: 0;
 }
 
 @media (max-width : 992px) {
