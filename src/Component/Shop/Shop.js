@@ -2,7 +2,7 @@ import Cart from '../Cart/Cart';
 import Productdata from '../Productdata/Productdata';
 import './Shop.css'
 import React, { useEffect, useState } from 'react';
-import { addToDB, getStoredCart } from '../utilities/fakeDB2';
+import { addToDB, deleteShoppingCart, getStoredCart } from '../utilities/fakeDB2';
 
 const Shop = () => {
     const [products, setProducts] = useState([]);
@@ -34,11 +34,14 @@ const Shop = () => {
         setCart(savedCart);
 
     }, [products])
-
+    const handleClearCart = () => {
+        setCart([]);
+        deleteShoppingCart()
+    }
     return (
         <div class="shop">
             <Productdata products={products} cartHandler={addtocart}></Productdata>
-            <Cart cart={cart}></Cart>
+            <Cart cart={cart} handleClearCart={handleClearCart}></Cart>
         </div>
     );
 };
